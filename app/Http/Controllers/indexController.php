@@ -2,20 +2,18 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 
 //Model
-use App\Models\Hero;
-use App\Models\Contact;
+use App\Models\Heroes;
+use App\Models\Contacts;
 use App\Models\Contactposts;
 use App\Models\Pages;
 use App\Models\Abouts;
-use App\Models\Pricing;
+use App\Models\Pricings;
 use App\Models\Services;
 use App\Models\Portfolios;
-
 
 
 class indexController extends Controller
@@ -23,14 +21,14 @@ class indexController extends Controller
     public function index()
     {
         $pages = Pages::all()->first();
-        $heroes = Hero::all()->first();
+        $heroes = Heroes::all()->first();
         $about = Abouts::all()->first();
         $services = Services::all();
         $serv = Services::all()->first();
         $portfolios = Portfolios::all()->first();
-        $pricing = Pricing::all()->first();
-        $pricings = Pricing::all();
-        $contact = Contact::all()->first();
+        $pricing = Pricings::all()->first();
+        $pricings = Pricings::all();
+        $contact = Contacts::all()->first();
 
         return view('front.index',
             ['pages' => $pages,

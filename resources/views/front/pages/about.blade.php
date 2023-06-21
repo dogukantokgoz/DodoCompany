@@ -8,6 +8,7 @@
         </div>
 
         <div class="row content">
+
             <div class="col-lg-6">
                 <p>
                     {{$about->content1}}

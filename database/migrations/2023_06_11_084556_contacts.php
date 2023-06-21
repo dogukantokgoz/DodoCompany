@@ -23,6 +23,7 @@ class Contacts extends Migration
             $table->string('emailcontent');
             $table->string('calltitle');
             $table->string('callcontent');
+            $table->timestamps();
         });
     }
 

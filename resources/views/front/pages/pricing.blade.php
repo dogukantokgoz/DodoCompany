@@ -1,4 +1,4 @@
-<!-- ======= Pricing Section ======= -->
+<!-- ======= Pricings Section ======= -->
 <section id="pricing" class="pricing">
     <div class="container">
 
@@ -31,4 +31,4 @@
         </div>
 
     </div>
-</section><!-- End Pricing Section -->
+</section><!-- End Pricings Section -->

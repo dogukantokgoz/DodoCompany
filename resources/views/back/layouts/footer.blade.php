@@ -1,7 +1,8 @@
 <!-- ======= Footer ======= -->
+
 <footer id="footer" class="footer">
     <div class="copyright">
-        &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+        &dopf; Original <strong><span>DodoCompany</span></strong>. We are at every table
     </div>
 </footer><!-- End Footer -->
 

@@ -53,7 +53,7 @@
     </div>
 </section><!-- End Faq Section -->
 
-<!-- ======= Contact Section ======= -->
+<!-- ======= Contacts Section ======= -->
 <section id="contact" class="contact">
     <div class="container">
 
@@ -117,4 +117,4 @@
         </div>
 
     </div>
-</section><!-- End Contact Section -->
+</section><!-- End Contacts Section -->

@@ -1,6 +1,6 @@
 @extends('front.layouts.master')
 @section('content')
-<!-- ======= Hero Section ======= -->
+<!-- ======= Heroes Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container">
         <div class="row justify-content-center">
@@ -13,7 +13,7 @@
     </div>
 </section>
 
-<!-- End Hero -->
+<!-- End Heroes -->
 <main id="main">
             @include('front.pages.about')
             @include('front.pages.services')

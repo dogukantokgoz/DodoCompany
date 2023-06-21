@@ -26,6 +26,7 @@ class Abouts extends Migration
            $table->string('step3')->nullable();
            $table->string('step4')->nullable();
            $table->string('step5')->nullable();
+            $table->timestamps();
         });
     }
 

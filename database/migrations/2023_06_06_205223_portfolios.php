@@ -18,6 +18,7 @@ class Portfolios extends Migration
            $table->string('title')->nullable();
            $table->string('content')->nullable();
            $table->string('foto')->nullable();
+            $table->timestamps();
         });
     }
 

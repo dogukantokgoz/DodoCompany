@@ -28,6 +28,7 @@ class Services extends Migration
         $table->string('foto')->nullable();
         $table->string('countstitle')->nullable();
         $table->string('countscontent')->nullable();
+            $table->timestamps();
     });
     }
 

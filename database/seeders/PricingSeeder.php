@@ -15,8 +15,8 @@ class PricingSeeder extends Seeder
     public function run()
     {
         DB::table('pricings')->insert([
-            'title' => 'Pricing',
-            'content' => 'Pricing content',
+            'title' => 'Pricings',
+            'content' => 'Pricings content',
             'pricetitle' =>'Free',
             'price'=> '0',
             'pricetime'=> 'month',

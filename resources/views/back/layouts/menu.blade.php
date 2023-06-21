@@ -98,7 +98,7 @@
         </li><!-- End Profile Page Nav -->
 
         <li class="nav-item">
-            <a class="nav-link collapsed" href="">
+            <a class="nav-link collapsed" href="{{route('admin.about')}}">
                 <i class="bi bi-question-circle"></i>
                 <span>About</span>
             </a>
@@ -109,7 +109,7 @@
                 <i class="bi bi-envelope"></i>
                 <span>Services</span>
             </a>
-        </li><!-- End Contact Page Nav -->
+        </li><!-- End Contacts Page Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="pages-register.html">
