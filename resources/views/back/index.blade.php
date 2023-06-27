@@ -1,6 +1,7 @@
 @extends('back.layouts.master')
 @section('content')
 
+
 <main id="main" class="main">
                     <!-- Recent Sales -->
                     <div class="col-12">

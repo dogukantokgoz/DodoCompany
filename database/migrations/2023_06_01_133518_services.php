@@ -17,17 +17,17 @@ class Services extends Migration
         $table->bigIncrements('id');
         $table->string('title')->nullable();
         $table->string('content')->nullable();
-        $table->string('datatitle')->nullable();
-        $table->string('datacontent')->nullable();
-        $table->string('dataicon')->nullable();
-        $table->string('calltitle')->nullable();
-        $table->string('callcontent')->nullable();
-        $table->string('featurestitle')->nullable();
-        $table->string('featurescontent')->nullable();
-        $table->string('featuresicon')->nullable();
+        $table->string('data_title')->nullable();
+        $table->string('data_content')->nullable();
+        $table->string('data_icon')->nullable();
+        $table->string('call_title')->nullable();
+        $table->string('call_content')->nullable();
+        $table->string('features_title')->nullable();
+        $table->string('features_content')->nullable();
+        $table->string('features_icon')->nullable();
         $table->string('foto')->nullable();
-        $table->string('countstitle')->nullable();
-        $table->string('countscontent')->nullable();
+        $table->string('counts_title')->nullable();
+        $table->string('counts_content')->nullable();
             $table->timestamps();
     });
     }

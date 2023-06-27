@@ -18,14 +18,14 @@ class ServicesSeeder extends Seeder
         DB::table('services')->insert([
            'title' => 'Services',
            'content' => 'Servis Açıklama',
-           'datatitle' => 'birinci kutu başlık',
-           'datacontent' => 'birinci kutu açıklama',
-           'calltitle' => 'Call To Action',
-           'callcontent' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-           'featurestitle' => 'birinci kutu başlık',
-           'featurescontent' =>'birinci kutu açıklama',
-           'countstitle' =>'birinci kutu açıklama',
-           'countscontent' =>'birinci kutu açıklama',
+           'data_title' => 'birinci kutu başlık',
+           'data_content' => 'birinci kutu açıklama',
+           'call_title' => 'Call To Action',
+           'call_content' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+           'features_title' => 'birinci kutu başlık',
+           'features_content' =>'birinci kutu açıklama',
+           'counts_title' =>'birinci kutu açıklama',
+           'counts_content' =>'birinci kutu açıklama',
         ]);
 
     }

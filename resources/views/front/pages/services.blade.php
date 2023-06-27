@@ -11,9 +11,9 @@
             @foreach($services as $service)
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-auto">
                 <div class="icon-box">
-                    <div class="icon"><i class="bx {{$service->dataicon}}"></i></div>
-                    <h4><a href="">{{$service->datatitle}}</a></h4>
-                    <p>{{$service->datacontent}}</p>
+                    <div class="icon"><i class="bx {{$service->data_icon}}"></i></div>
+                    <h4><a href="">{{$service->data_title}}</a></h4>
+                    <p>{{$service->data_content}}</p>
                 </div>
             </div>
             @endforeach
@@ -27,8 +27,8 @@
 
         <div class="row">
             <div class="col-lg-9 text-center text-lg-start">
-                <h3>{{$serv->calltitle}}</h3>
-                <p>{{$serv->callcontent}}</p>
+                <h3>{{$serv->call_title}}</h3>
+                <p>{{$serv->call_content}}</p>
             </div>
             <div class="col-lg-3 cta-btn-container text-center">
                 <a class="cta-btn align-middle" href="#contact">Bize ulaş</a>
@@ -47,8 +47,8 @@
             <div class="col-lg-6 order-2 order-lg-1">
                 <div class="icon-box mt-5 mt-lg-0">
                     <i class="bx bx-receipt"></i>
-                    <h4>{{$service->featurestitle}}</h4>
-                    <p>{{$service->featurescontent}}</p>
+                    <h4>{{$service->features_title}}</h4>
+                    <p>{{$service->features_content}}</p>
                 </div>
                 </div>
                 @endforeach
@@ -121,8 +121,8 @@
     <div class="container">
 
         <div class="text-center title">
-            <h3>{{$service->countstitle}}</h3>
-            <p>{{$service->countscontent}}</p>
+            <h3>{{$service->counts_title}}</h3>
+            <p>{{$service->counts_content}}</p>
         </div>
 
         <div class="row counters position-relative">

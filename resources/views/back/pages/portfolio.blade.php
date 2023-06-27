@@ -8,10 +8,10 @@
             </div>
         @endif
         <div class="col-md-12 mx-auto">
-            <form method="post" action="{{route('admin.heroUpdate')}}">
+            <form method="post" action="{{route('admin.portfolioUpdate')}}">
                 @method('PUT')
                 @csrf
-                <input type="hidden" name="hero_id" value="{{$heroes->id}}">
+                <input type="hidden" name="portfolio_id" value="{{$portfolio->id}}">
                 <div class="form-group row">
                     <h1>
                         <div class="sidebar-brand-text mx-auto my-auto">Anasayfa</div>
@@ -19,30 +19,30 @@
                     <label class="col-sm-2 col-form-label">Title</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" name="title" placeholder="Title"
-                               value="{{$heroes->title}}">
+                               value="{{$portfolio->title}}">
                         <br>
                     </div>
 
                     <label class="col-sm-2 col-form-label">Description</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" name="description" placeholder="Description"
-                               value="{{$heroes->content}}">
+                               value="{{$portfolio->content}}">
                         <br>
                     </div>
 
-                    <label class="col-sm-2 col-form-label">Video Linki</label>
+                    <label class="col-sm-2 col-form-label">Fotoğraf</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="link" placeholder="Link"
-                               value="{{$heroes->video}}">
+                        <input type="text" class="form-control" name="foto" placeholder="Link"
+                               value="{{$portfolio->foto}}">
                         <br>
                     </div>
 
                     <div align="right">
                         <button type="submit" class="btn btn-primary">Kaydet</button>
                     </div>
-                    </div>
                 </div>
-            </form>
+        </div>
+        </form>
         </div>
     </main>
 

@@ -17,9 +17,9 @@ class Pricings extends Migration
         $table->bigIncrements('id');
         $table->string('title')->nullable();
         $table->string('content')->nullable();
-        $table->string('pricetitle')->nullable();
+        $table->string('price_title')->nullable();
         $table->string('price')->nullable();
-        $table->string('pricetime')->nullable();
+        $table->string('price_time')->nullable();
         $table->string('madde1')->nullable();
         $table->string('madde2')->nullable();
         $table->string('madde3')->nullable();

@@ -2,6 +2,11 @@
 @section('content')
 
     <main id="main" class="main">
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
         <div class="col-md-12 mx-auto">
             <form method="post" action="{{route('admin.aboutUpdate')}}">
                 @method('PUT')
@@ -9,7 +14,7 @@
                 <input type="hidden" name="about_id" value="{{$abouts->id}}">
                 <div class="form-group row">
                     <h1>
-                        <div class="sidebar-brand-text mx-auto my-auto">Anasayfa</div>
+                        <div class="sidebar-brand-text mx-auto my-auto">About</div>
                     </h1>
                     <label class="col-sm-2 col-form-label">Title</label>
                     <div class="col-sm-10">
