@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Portfolios extends Migration
+class Faqs extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,16 @@ class Portfolios extends Migration
      */
     public function up()
     {
-        Schema::create('portfolios', function (Blueprint $table) {
+        Schema::create('faqs', function (Blueprint $table){
             $table->bigIncrements('id');
-            $table->string('title')->nullable();
-            $table->string('content')->nullable();
-            $table->string('foto')->nullable();
+            $table->string('title');
+            $table->longText('description');
+            $table->string('question1');
+            $table->longText('answer1');
+            $table->string('question2');
+            $table->longText('answer2');
+            $table->string('question3');
+            $table->longText('answer3');
             $table->timestamps();
         });
     }

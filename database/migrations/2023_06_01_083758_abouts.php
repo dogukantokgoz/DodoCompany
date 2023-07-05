@@ -13,19 +13,19 @@ class Abouts extends Migration
      */
     public function up()
     {
-        Schema::create('abouts', function (Blueprint $table){
-           $table->bigIncrements('id');
-           $table->string('title')->nullable();
-           $table->string('content')->nullable();
-           $table->string('content1')->nullable();
-           $table->string('content2')->nullable();
-           $table->string('content3')->nullable();
-           $table->string('step')->nullable();
-           $table->string('step1')->nullable();
-           $table->string('step2')->nullable();
-           $table->string('step3')->nullable();
-           $table->string('step4')->nullable();
-           $table->string('step5')->nullable();
+        Schema::create('abouts', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('title')->nullable();
+            $table->string('content')->nullable();
+            $table->string('content1')->nullable();
+            $table->string('content2')->nullable();
+            $table->string('content3')->nullable();
+            $table->string('step')->nullable();
+            $table->string('step1')->nullable();
+            $table->string('step2')->nullable();
+            $table->string('step3')->nullable();
+            $table->string('step4')->nullable();
+            $table->string('step5')->nullable();
             $table->timestamps();
         });
     }

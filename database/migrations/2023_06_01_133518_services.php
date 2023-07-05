@@ -13,23 +13,27 @@ class Services extends Migration
      */
     public function up()
     {
-        Schema::create('services', function(Blueprint $table){
-        $table->bigIncrements('id');
-        $table->string('title')->nullable();
-        $table->string('content')->nullable();
-        $table->string('data_title')->nullable();
-        $table->string('data_content')->nullable();
-        $table->string('data_icon')->nullable();
-        $table->string('call_title')->nullable();
-        $table->string('call_content')->nullable();
-        $table->string('features_title')->nullable();
-        $table->string('features_content')->nullable();
-        $table->string('features_icon')->nullable();
-        $table->string('foto')->nullable();
-        $table->string('counts_title')->nullable();
-        $table->string('counts_content')->nullable();
+        Schema::create('services', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('title')->nullable();
+            $table->string('content')->nullable();
+            $table->string('data_title')->nullable();
+            $table->string('data_content')->nullable();
+            $table->string('data_icon')->nullable();
+            $table->string('call_title')->nullable();
+            $table->string('call_content')->nullable();
+            $table->string('features_title')->nullable();
+            $table->string('features_content')->nullable();
+            $table->string('features_icon')->nullable();
+            $table->string('foto')->nullable();
+            $table->string('counts_title')->nullable();
+            $table->string('counts_content')->nullable();
+            $table->string('counts1')->nullable();
+            $table->string('counts2')->nullable();
+            $table->string('counts3')->nullable();
+            $table->string('counts4')->nullable();
             $table->timestamps();
-    });
+        });
     }
 
     /**

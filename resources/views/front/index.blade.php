@@ -19,6 +19,7 @@
             @include('front.pages.services')
             @include('front.pages.portfolio')
             @include('front.pages.pricing')
+            @include('front.pages.faq')
             @include('front.pages.contact')
 </main><!-- End #main -->
 @endsection

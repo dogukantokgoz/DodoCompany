@@ -14,6 +14,7 @@ use App\Models\Abouts;
 use App\Models\Pricings;
 use App\Models\Services;
 use App\Models\Portfolios;
+use App\Models\Faqs;
 
 
 class indexController extends Controller
@@ -28,6 +29,7 @@ class indexController extends Controller
         $portfolios = Portfolios::all()->first();
         $pricing = Pricings::all()->first();
         $pricings = Pricings::all();
+        $faqs = Faqs::all()->first();
         $contact = Contacts::all()->first();
 
         return view('front.index',
@@ -39,6 +41,7 @@ class indexController extends Controller
                 'portfolios' => $portfolios,
                 'pricing' => $pricing,
                 'pricings' => $pricings,
+                'faqs' => $faqs,
                 'contact' => $contact,]);
     }
 
