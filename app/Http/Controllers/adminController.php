@@ -9,6 +9,7 @@ use App\Http\Requests\HeroRequest;
 use App\Http\Requests\PortfolioRequest;
 use App\Http\Requests\PricingRequest;
 use App\Http\Requests\ServicesRequest;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 //Model
@@ -20,11 +21,22 @@ use App\Models\Portfolios;
 use App\Models\Contactposts;
 use App\Models\Faqs;
 use App\Models\Contacts;
-
+use Illuminate\Support\Facades\Auth;
 
 
 class adminController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware(function ($request, $next) {
+            if (Auth::check()) {
+                $user = Auth::user();
+                view()->share('user', $user);
+            }
+            return $next($request);
+        });
+    }
     public function index()
     {
         return view('back.index');
@@ -78,9 +90,11 @@ class adminController extends Controller
 
     public function services()
     {
-        $services = Services::all()->first();
+        $service = Services::all()->first();
+        $services = Services::all();
 
-        return view('back.pages.services', ['services' => $services]);
+
+        return view('back.pages.services', ['service' => $service], ['services' => $services]);
     }
 
     public function servicesUpdate(ServicesRequest $request)
@@ -103,6 +117,36 @@ class adminController extends Controller
         ]);
 
         return redirect()->back()->with('success', 'Services başarıyla güncellendi');
+    }
+
+    public function servicesbox1()
+    {
+        $services = Services::all()->where('id','1')->first();
+        return view('back.pages.servicesbox1', ['services' => $services]);
+    }
+
+    public function servicesbox1Update(ServicesRequest $request)
+    {
+        $services = Services::find($request->services_id);
+        $services->update([
+           'data_title' => $request->data_title,
+           'data_content' => $request->data_content,
+           'data_icon' => $request->data_icon
+        ]);
+
+        return redirect()->back()->with('success', 'Başarıyla güncellendi');
+    }
+
+    public function servicesbox2()
+    {
+        $services = Services::all()->where('id','2')->first();
+        return view('back.pages.servicesbox1', ['services' => $services]);
+    }
+
+    public function servicesbox3()
+    {
+        $services = Services::all()->where('id','3')->first();
+        return view('back.pages.servicesbox1', ['services' => $services]);
     }
 
     public function portfolio()
@@ -254,7 +298,6 @@ class adminController extends Controller
 
         return redirect()->back()->with('success', 'FAQ başarıyla güncellendi');
     }
-
 }
 
 

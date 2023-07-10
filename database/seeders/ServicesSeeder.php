@@ -19,6 +19,9 @@ class ServicesSeeder extends Seeder
         DB::table('services')->insert([
             'title' => 'services',
             'content' => 'servis açıklama',
+            'data_title' => 'birinci kutu başlık',
+            'data_content' => 'birinci kutu açıklama',
+            'data_icon' => '',
             'call_title' => 'Call To Action',
             'call_content' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
             'features_title' => 'Resim Başlık',
@@ -31,18 +34,11 @@ class ServicesSeeder extends Seeder
 
         $services = [
             [
-                'data_title' => 'birinci kutu başlık',
-                'data_content' => 'birinci kutu açıklama',
-                'data_icon' => '',
-            ],
-            [
-
                 'data_title' => 'ikinci kutu başlık',
                 'data_content' => 'ikinci kutu açıklama',
                 'data_icon' => '',
             ],
             [
-
                 'data_title' => 'üçüncü kutu başlık',
                 'data_content' => 'üçüncü kutu açıklama',
                 'data_icon' => '',

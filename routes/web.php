@@ -7,11 +7,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', '\App\Http\Controllers\indexController@index')->name('front.index');
 Route::post('/contactpost', '\App\Http\Controllers\indexController@contactPost')->name('front.contactpost');
 
+
 //Login
 Route::get('/login', '\App\Http\Controllers\loginController@login')->name('login');
+Route::post('/giris', '\App\Http\Controllers\loginController@logingiris')->name('logingiris');
 
 
+//Logout
+Route::get('logout', '\App\Http\Controllers\loginController@logout')->name('logout');
+
+Route::middleware('login')->group(function () {
 //Back
+
 Route::get('/admin/home', '\App\Http\Controllers\adminController@index')->name('admin.index');
 Route::get('/admin/hero', '\App\Http\Controllers\adminController@hero')->name('admin.hero');
 Route::put('/heroUpdate', '\App\Http\Controllers\adminController@heroUpdate')->name('admin.heroUpdate');
@@ -33,4 +40,8 @@ Route::get('/admin/contact', '\App\Http\Controllers\adminController@contact')->n
 Route::get('/admin/contactPost/{id}', '\App\Http\Controllers\adminController@contactPost')->name('admin.contactPost');
 Route::get('/admin/faq', '\App\Http\Controllers\adminController@faq')->name('admin.faq');
 Route::put('/admin/faqUpdate', '\App\Http\Controllers\adminController@faqUpdate')->name('admin.faqUpdate');
-
+Route::get('/admin/servicesbox1', '\App\Http\Controllers\adminController@servicesbox1')->name('admin.servicesbox1');
+Route::get('/admin/servicesbox2', '\App\Http\Controllers\adminController@servicesbox2')->name('admin.servicesbox2');
+Route::get('/admin/servicesbox3', '\App\Http\Controllers\adminController@servicesbox3')->name('admin.servicesbox3');
+Route::put('/admin/servicesbox1Update', '\App\Http\Controllers\adminController@servicesbox1Update')->name('admin.servicesbox1Update');
+});

@@ -24,19 +24,19 @@ class ServicesRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string',
-            'description' => 'required|string',
-            'data_title' => 'required|string',
-            'data_content' => 'required|string',
+            'title' => 'string',
+            'description' => 'string',
+            'data_title' => 'string',
+            'data_content' => 'string',
             'data_icon' => 'string',
             'call_title' => 'string',
             'call_content' => 'string',
-            'features_title' => 'required|string',
-            'features_content' => 'required|string',
+            'features_title' => 'string',
+            'features_content' => 'string',
             'features_icon' => 'string',
             'foto' => 'string',
-            'counts_title' => 'required|string',
-            'counts_content' => 'required|string'
+            'counts_title' => 'string',
+            'counts_content' => 'string'
         ];
     }
 }

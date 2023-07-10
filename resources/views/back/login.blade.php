@@ -1,3 +1,10 @@
+
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
 <link href="{{asset('back/')}}/assets/css/login.css" rel="stylesheet">
 
 
@@ -5,7 +12,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<form method="post" action="">
+<form method="post" action="{{route('logingiris')}}">
     @csrf
     <div class="wrapper fadeInDown">
         <div id="formContent">

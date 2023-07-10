@@ -24,7 +24,7 @@ class PricingRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+
         ];
     }
 }
